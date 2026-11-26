@@ -1,0 +1,40 @@
+# Environnements et dependances locales
+.venv/
+.python/
+SyraLine/packages/
+# Caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Donnees locales et secrets
+.env
+.env.*
+!.env.example
+settings.json
+settings.tmp
+SyraLine/lib/legacy/syraline_config.json
+SyraLine - Output/
+sauvegarde*/
+*.zip
+*.log
+# Exports locaux
+dist/
+
+# Dossiers utilisateur
+Input/*
+!Input/README.md
+Output/*
+!Output/README.md
+.python-download/
+.venv-backup-*/
+
+# ── VIP : secrets à ne JAMAIS publier (gardés dans ../SyraLine-PRIVE-ne-pas-publier) ──
+pack.key
+*.key
+premium_src/
+premium_tools.py
+cloudflare_worker.js
+vip_keyserver.py
+server/pack_premium.py
+server/VIP_PACK.md
+# (vip_premium.enc N'EST PAS ignoré : il est chiffré, il doit être livré avec l'app)

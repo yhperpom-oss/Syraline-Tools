@@ -1,0 +1,392 @@
+Screen {background:$syraline-bg; color:$syraline-text;}
+* {scrollbar-color:$syraline-accent-2; scrollbar-color-hover:$syraline-accent; scrollbar-color-active:$syraline-accent; scrollbar-background:$syraline-bg; scrollbar-size:1 1;}
+#topline {display:none;}
+.tool-topline {height:1;background:$syraline-bg-alt;color:$syraline-text-dim;}
+#hero {height:5;margin:0 2;border-bottom:solid $syraline-border;background:$syraline-bg;}
+#identity {width:1fr;padding:1 1 0 1;}
+#dashboard-brand {width:19;height:3;color:$syraline-accent;margin-top:0;}
+#brand-caption {width:1fr;margin:0 0 0 2;}
+#brand-tools {height:1;color:$syraline-text;text-style:bold;}
+#hero-tagline {height:1;color:$syraline-text-dim;}
+#hero-right {width:29;content-align:right middle;padding-top:2;}
+#signature {height:1;text-align:right;color:$syraline-text-dim;}
+#workspace {height:1fr;min-height:8;margin:0 2;}
+#navigation {width:23;padding:1 1 0 0;border-right:solid $syraline-border;}
+#category-scroll {height:1fr;min-height:4;}
+.eyebrow {height:1;color:$syraline-text-dim;margin:0 1 1 1;}
+.nav-button {width:100%;height:2;min-width:0;text-align:left;content-align:left middle;background:transparent;color:$syraline-text-dim;border:none !important;border-left:thick transparent !important;padding:0 1;margin:0;text-style:none;}
+.nav-button:hover,.nav-button:focus {background:$syraline-bg-alt;color:$syraline-text;border:none !important;border-left:thick transparent !important;}
+.nav-button.chosen {border-left:thick $syraline-accent !important;background:$syraline-bg-alt;color:$syraline-accent;text-style:bold;}
+.separator {height:1;color:$syraline-border;margin:0 1;}
+#telemetry {height:9;margin:1 1 0 1;display:none;}
+#sidebar-end {display:none;}
+#catalog {width:1fr;padding:0 1;}
+#catalog-heading {height:1;margin-top:1;}
+#collection-title {width:1fr;color:$syraline-text;text-style:bold;}
+#collection-count {width:11;text-align:right;color:$syraline-accent;}
+#collection-subtitle {height:2;color:$syraline-text-dim;padding:0;}
+#cards-scroll {height:1fr;}
+#cards {height:auto;grid-size:3;grid-gutter:1 2;grid-rows:5;padding:0 1 1 0;}
+.module-card {height:5;border:round $syraline-border;background:$syraline-bg-alt;padding:0 1;overflow:hidden;}
+#pagination {height:1;margin:0 0 1 0;align:center middle;}
+#pagination Button {height:1;width:4;min-width:4;border:none !important;background:$syraline-bg-alt;color:$syraline-accent;padding:0;}
+#page-label {width:1fr;height:1;text-align:center;color:$syraline-text-dim;}
+.module-card:hover {border:round $syraline-accent-2;}
+.module-card:focus {border:round $syraline-accent;background:$syraline-accent 8%;}
+.module-card.premium-card {border:round #8a6d1b;background:#130f04;}
+.module-card.premium-card:hover {border:round #ffd700;background:#201805;}
+.module-card.premium-card:focus {border:round #ffd700;background:#2b2106;}
+#scroll-hint {height:1;margin-top:1;color:$syraline-text-dim;text-align:right;}
+#cards-scroll {scrollbar-size-vertical:1;scrollbar-gutter:stable;}
+Button {text-style:none;}
+Button.-active {tint:transparent;}
+Button:focus {text-style:bold;}
+#tool-toolbar {border:round $syraline-border !important;}
+#tool-toolbar Button {border:round $syraline-border !important;background:$syraline-bg-alt;}
+#tool-toolbar Button:focus,#tool-toolbar Button:hover {border:round $syraline-accent !important;}
+#inspector {width:27;border-left:solid $syraline-border;padding:1 0 0 1;}
+#inspector-tag {height:1;color:$syraline-text-dim;}
+#detail-orbit {display:none;}
+#detail-number {height:1;color:$syraline-accent;margin-top:1;}
+#detail-name {height:auto;min-height:1;max-height:2;text-style:bold;color:$syraline-text;margin-top:1;}
+#detail-description {height:auto;max-height:7;color:$syraline-text-dim;margin-top:1;}
+#detail-meta {height:3;color:$syraline-text-dim;margin-top:1;}
+#detail-open {height:3;min-width:0;width:100%;background:$syraline-accent-2;color:$syraline-text;content-align:center middle;}
+#detail-caption {display:none;}
+#footer {height:2;background:$syraline-bg-alt;border-top:solid $syraline-border;color:$syraline-text-dim;}
+.narrow #inspector {display:none;}
+.compact #navigation {width:21;}
+.compact #hero-right {display:none;}
+.compact #brand-caption {margin-left:1;}
+.compact #hero-tagline {display:none;}
+.compact #catalog {padding:0 1;}
+.compact #workspace {margin:0 1;}
+.compact #collection-subtitle {height:2;}
+.short #hero {height:5;}
+.short #dashboard-brand {margin-top:0;}
+.short #brand-caption {margin-top:0;}
+.short #hero-right {padding-top:1;}
+.short #telemetry {display:none;}
+.short #workspace {margin-top:0;margin-bottom:0;}
+.short #navigation {padding-top:1;}
+.short .nav-button {height:2;}
+.short #detail-meta {display:none;}
+BootScreen {align:center middle;background:#000000;}
+#boot-eyebrow {dock:top;layer:overlay;height:1;text-align:center;color:$syraline-text-dim;margin:1 0;background:#000000;}
+#neon-canvas {width:100%;height:100%;background:#000000;content-align:center middle;}
+#boot-skip {dock:bottom;layer:overlay;height:1;text-align:center;color:$syraline-accent;margin:1 0 2 0;background:#000000;}
+AppearanceScreen,SearchScreen {align:center middle;background:$syraline-bg 85%;}
+#appearance-box {width:64;max-width:95%;height:auto;max-height:95%;border:round $syraline-accent;background:$syraline-bg-alt;padding:1 3;overflow-y:auto;}
+#appearance-title {height:2;color:$syraline-text;text-style:bold;margin-bottom:1;}
+#appearance-box Button {width:100%;height:3;background:$syraline-bg;margin-bottom:0;color:$syraline-text;content-align:left middle;}
+#appearance-box Button:hover,#appearance-box Button:focus {background:$syraline-accent-2;}
+#search-box {width:82;max-width:95%;height:auto;max-height:90%;border:round $syraline-accent;background:$syraline-bg-alt;padding:1 2;}
+#search-input {height:3;border:round $syraline-border;background:$syraline-bg;}
+#search-input:focus {border:round $syraline-accent;}
+#search-results {height:auto;max-height:16;margin:1 0;}
+#search-results ListItem {height:2;padding:0 1;}
+.search-hint {height:1;color:$syraline-text-dim;}
+#tool-toolbar {border:round $syraline-border;background:$syraline-bg-alt;margin:1 2 0 2;padding:0 1;height:auto;}
+#title-row {height:3;padding:0;}
+#screen-title {width:1fr;height:3;content-align:left middle;margin-left:2;}
+#tool-context {height:auto;color:$syraline-text-dim;margin:0 1 1 1;}
+#input-row {padding:0;}
+#tool-input {border:round $syraline-border;background:$syraline-bg;color:$syraline-text;}
+#tool-input:focus {border:round $syraline-accent;}
+#run-btn {background:$syraline-accent-2;color:$syraline-text;width:18;}
+#terminal-btn {background:$syraline-bg;color:$syraline-text-dim;width:18;}
+#terminal-btn:hover,#terminal-btn:focus {border:round $syraline-accent !important;color:$syraline-text;}
+#run-terminal-btn {background:$syraline-accent-2;color:$syraline-text;width:34;}
+#back-btn {background:$syraline-bg;color:$syraline-text-dim;}
+#result-scroll {margin:1 2;border:round $syraline-border;padding:1;}
+#tool-empty {height:auto;text-align:center;color:$syraline-text-dim;margin-top:2;}
+.tool-footnote {height:1;color:$syraline-text-dim;background:$syraline-bg-alt;}
+.compact-tool #tool-context {display:none;}
+.compact-tool #tool-toolbar {margin:0 1;padding:0 1;}
+.compact-tool #result-scroll {margin:0 1;padding:0 1;}
+Toast,Toast.toast-success,Toast.toast-error {height:1;min-height:1;max-height:1;padding:0 1;margin:0 1;border:none;background:$syraline-bg-alt;dock:bottom;}
+
+/* Signature: sculpted wordmark, quiet typography and orbital emblem. */
+#hero {height:8;margin:0 2;border-bottom:solid $syraline-border;}
+#identity {padding:1 1 0 1;}
+#dashboard-brand {width:33;height:6;margin:0;}
+#brand-caption {margin:1 0 0 3;min-width:25;}
+#brand-tools {color:$syraline-text;height:1;text-style:bold;}
+#hero-tagline {height:1;margin-top:1;color:$syraline-text-dim;}
+#brand-rule {height:1;margin-top:1;color:$syraline-accent-2;}
+#brand-orbit {width:18;height:5;margin:1 2 0 1;}
+#hero-right {width:22;padding:2 1 0 0;}
+#palette-label {height:1;color:$syraline-accent-2;text-align:right;}
+#signature {height:2;margin-top:1;text-align:right;color:$syraline-text-dim;}
+.short #hero {height:8;}
+.short #hero-right {padding-top:2;}
+.compact #brand-caption {margin:1 0 0 2;}
+.compact #hero-tagline {display:block;}
+.compact #brand-orbit {display:none;}
+.compact #hero-right {display:none;}
+
+/* Content-first masthead: 4 rows of half-block lettering, never stretched. */
+#hero {height:6;margin:0 2;}
+#dashboard-brand {width:27;height:4;}
+#brand-caption {margin:0 0 0 2;min-width:18;}
+#brand-tools {margin-top:0;}
+#hero-tagline {margin-top:1;}
+#brand-rule {display:none;}
+#hero-right {width:28;padding:0 1 0 1;margin-top:1;border-left:solid $syraline-border;}
+#palette-label {height:1;color:$syraline-text;text-style:bold;text-align:left;}
+#signature {height:1;margin:0;color:$syraline-text-dim;text-align:left;}
+#edit-header-profile {height:1;min-width:0;width:100%;border:none !important;padding:0;margin-top:1;background:transparent;color:$syraline-accent;text-align:left;}
+.compact #hero-right {display:block;width:24;}
+.compact #brand-caption {display:none;}
+.short #hero {height:6;}
+.short #hero-right {padding-top:0;}
+.tiny #hero {height:5;}
+.tiny #identity {padding-top:0;}
+.tiny #hero-right {margin-top:0;}
+.tiny #collection-subtitle {height:1;}
+#hero {max-height:30%;}
+ProfileScreen {align:center middle;background:$syraline-bg 95%;}
+#profile-box {width:64;max-width:96%;height:auto;max-height:94%;border:round $syraline-border;background:$syraline-bg-alt;padding:1 3;}
+#profile-kicker {height:1;color:$syraline-accent;}
+#profile-title {height:1;margin-top:1;text-style:bold;color:$syraline-text;}
+#profile-intro {height:1;color:$syraline-text-dim;margin-bottom:1;}
+.profile-label {height:1;margin-top:1;color:$syraline-text;}
+#profile-box Input,#profile-box Select {height:3;margin:0;}
+#profile-motion-row {height:3;margin-top:1;align:left middle;}
+#profile-motion-label {width:1fr;height:1;}
+#profile-motion {width:auto;}
+#profile-error {height:auto;color:$syraline-error;}
+#profile-save,#profile-cancel {width:100%;height:3;margin-top:1;}
+#profile-save {background:$syraline-accent-2;border:none;color:$syraline-text;}
+#profile-cancel {background:transparent;border:none;color:$syraline-text-dim;}
+
+#profile-shell {width:64;max-width:96%;height:36;max-height:94%;border:round $syraline-border;background:$syraline-bg-alt;padding:1 2;}
+#profile-box {width:100%;height:1fr;max-width:100%;max-height:100%;border:none;padding:0 1;}
+#profile-actions {height:3;margin-top:1;}
+#profile-save {width:2fr;height:3;margin:0;}
+#profile-cancel {width:1fr;height:3;margin:0;}
+#profile-box Input {border:solid $syraline-border;background:$syraline-bg;}
+#profile-box Input:focus {border:solid $syraline-accent;}
+#edit-header-profile {text-align:left;content-align:left middle;}
+
+#identity {height:100%;}
+
+/* Engraved masthead: one wordmark, one actionable identity, one baseline. */
+#hero,.short #hero {height:6;max-height:30%;border:none;margin:0 2;}
+#identity {height:5;padding:0 1 0 0;margin:0;align:left middle;}
+#dashboard-brand {height:4;width:1fr;margin:0;}
+#brand-caption,.compact #brand-caption {display:none;}
+#hero-right,.short #hero-right,.compact #hero-right {width:25;height:4;margin:0 0 0 2;padding:0 1;border:round $syraline-border;background:$syraline-bg-alt;}
+#palette-label {height:1;text-align:left;color:$syraline-text;}
+#signature {display:none;}
+#edit-header-profile {height:1;margin:0;padding:0;text-align:left;content-align:left middle;color:$syraline-accent;}
+#edit-header-profile:hover,#edit-header-profile:focus {background:$syraline-accent 12%;color:$syraline-text;}
+#signature-rail {dock:bottom;height:1;width:100%;}
+.tiny #hero {height:5;}
+.tiny #identity {height:4;padding:0;}
+.tiny #hero-right {margin-top:0;}
+
+#hero-right,.short #hero-right,.compact #hero-right {width:30;height:5;padding:0 1;}
+#profile-identity-row {height:1;width:100%;}
+#palette-label {width:1fr;height:1;}
+#edit-header-profile {width:10;height:1;text-align:right;content-align:right middle;}
+.community-link {width:100%;min-width:0;height:1;min-height:1;margin:0;padding:0;border:none !important;background:transparent;color:$syraline-text-dim;text-align:left;content-align:left middle;}
+.community-link:hover,.community-link:focus {background:$syraline-accent 14%;color:$syraline-accent;text-style:bold;}
+.tiny #hero-right {height:4;border:none;border-left:solid $syraline-border;}
+#hero-right Button, #hero-right Button:focus, #hero-right Button:hover {border:none !important;height:1;min-height:1;padding:0;}
+
+
+#hero-right .community-link {padding:0;margin:0;content-align:left top;text-align:left;}
+
+/* Stable sidebar: reserve scrollbar space and never wrap menu labels. */
+#navigation,.compact #navigation {width:25;}
+#category-scroll {scrollbar-gutter:stable;scrollbar-size-vertical:1;overflow-x:hidden;}
+#navigation .nav-button {text-wrap:nowrap;text-overflow:ellipsis;padding:0 0 0 1;}
+/* Secret doorway: compact control beside the wordmark. */
+#secret-entry {width:5;min-width:5;height:3;margin:0 1;padding:0;border:round $syraline-border;background:$syraline-bg-alt;color:$syraline-accent;content-align:center middle;}
+#secret-entry:hover,#secret-entry:focus {border:round $syraline-accent;background:$syraline-accent 15%;color:$syraline-text;}
+DarkConfirmation {align:center middle;background:$syraline-bg 88%;}
+#dark-confirm {width:58;max-width:94%;height:auto;max-height:95%;padding:1 2;border:round $syraline-accent;background:$syraline-bg-alt;overflow-y:auto;}
+.dark-emblem {height:1;color:$syraline-accent;text-align:center;text-style:bold;}
+.dark-kicker {height:1;margin-top:1;color:$syraline-text-dim;text-align:center;text-style:bold;}
+#dark-question {height:auto;margin:1 0;color:$syraline-text;text-align:center;}
+#dark-actions {height:3;}
+#dark-actions Button {width:1fr;min-width:0;height:3;margin:0;padding:0 1;border:round $syraline-border;background:$syraline-bg;color:$syraline-text;}
+#dark-actions #dark-accept {margin-left:1;background:$syraline-accent 15%;color:$syraline-accent;}
+#dark-actions Button:hover,#dark-actions Button:focus {border:round $syraline-accent;}
+DarkConstruction {align:center middle;background:#090805;}
+#dark-chamber {width:54;max-width:94%;height:auto;max-height:95%;padding:2 3;border:round $syraline-border;background:#121009;overflow-y:auto;}
+#dark-divider {height:1;margin:1 0;color:$syraline-accent;text-align:center;}
+#dark-title {height:auto;color:$syraline-text;text-style:bold;text-align:center;margin-bottom:2;}
+#dark-back {height:3;width:100%;min-width:0;border:round $syraline-border;background:transparent;color:$syraline-text-dim;}
+#dark-back:hover,#dark-back:focus {border:round $syraline-accent;color:$syraline-accent;}
+/* ABYSS: breathing accent and engraved lettering, responsive to terminal width. */
+#secret-entry {width:17;min-width:7;height:3;margin:0 1;padding:0 1;text-style:bold;}
+.compact #secret-entry {width:9;margin:0;padding:0 1;}
+/* DARK SIDE portal owns its cell-level frame and lighting. */
+#secret-entry,#secret-entry:hover,#secret-entry:focus {width:23;min-width:13;height:3;margin:0 1;padding:0;border:none !important;background:#0c0a07;color:#edce90;content-align:center middle;text-style:none;}
+.compact #secret-entry {width:15;margin:0;padding:0;}
+#secret-entry {text-wrap:nowrap;}
+DarkAccess {align:center middle;background:$syraline-bg 90%;}
+#dark-access {width:50;max-width:94%;height:auto;max-height:95%;padding:1 2;border:round #b99451;background:#121009;overflow-y:auto;}
+#dark-code-label {height:auto;text-align:center;margin:1 0;color:$syraline-text;}
+#dark-code {height:3;border:round #514025;background:#0c0a07;color:#f4e4bd;}
+#dark-code:focus {border:round #e2bf79;}
+#dark-code-error {height:auto;min-height:1;color:$syraline-error;margin-bottom:1;text-align:center;}
+#dark-actions #dark-unlock {margin-left:1;background:#302513;color:#edce90;}
+#dark-key-help {height:auto;color:$syraline-text-dim;text-align:center;margin-bottom:1;}
+#dark-key-links {height:1;margin-bottom:1;}
+#dark-key-links Button {width:1fr;min-width:0;height:1;min-height:1;border:none !important;background:transparent;color:#e1bd78;padding:0;text-align:center;}
+#dark-key-links Button:hover,#dark-key-links Button:focus {background:#302513;color:#fff0d2;}
+/* VIP entrance and access panels share a restrained gold finish. */
+#secret-entry,#secret-entry:hover,#secret-entry:focus {color:#edce90;background:#0c0a07;}
+#dark-confirm,#dark-chamber {border:round #b99451;background:#121009;}
+.dark-emblem,#dark-divider {color:#e2bf79;}
+.dark-kicker {color:#c9ab73;}
+#dark-actions #dark-accept,#dark-actions #dark-unlock {background:#302513;color:#edce90;}
+#dark-actions Button:hover,#dark-actions Button:focus,#dark-back:hover,#dark-back:focus {border:round #e2bf79;color:#f4e4bd;}
+
+/* Premium state: preserves the selected palette and shared layout. */
+.vip-active #hero-right {border:round #5a3aa8;background:#150e24;}
+.vip-active #collection-title {color:#c6b0f5;}
+.vip-active #collection-count {color:#965ff6;}
+.vip-active #exit-vip {color:#c3b2e0;}
+.vip-active #footer {border-top:solid #5a3aa8;background:#150e24;}
+
+
+/* Release utilities: readable result actions and multiline input. */
+#tool-multiline {height:6;min-height:3;border:round $syraline-border;background:$syraline-bg;color:$syraline-text;}
+#tool-multiline:focus {border:round $syraline-accent;}
+#browse-file-btn,#copy-result-btn {height:3;min-height:3;width:28;margin:0 0 0 0;}
+.compact-tool #tool-multiline {height:3;}
+
+#tool-actions {height:3;width:100%;}
+#tool-actions Button {width:1fr;min-width:0;max-width:30;margin-right:1;padding:0;}
+
+/* Option screens only: quiet surfaces, clear action hierarchy and reading rhythm. */
+#tool-toolbar {background:$syraline-bg;border:round $syraline-border;}
+#screen-title {text-style:bold;}
+#tool-context {color:$syraline-text-dim;}
+#run-btn {background:$syraline-accent;color:$syraline-bg;text-style:bold;}
+#run-btn:hover,#run-btn:focus {background:$syraline-accent-2;color:$syraline-text;}
+#tool-input,#tool-multiline {background:$syraline-bg;}
+#result-scroll {background:$syraline-bg;border:round $syraline-border;}
+#result-scroll:focus-within {border:round $syraline-accent;}
+#copy-result-btn:disabled {color:$syraline-text-dim;}
+.tool-footnote {color:$syraline-text-dim;}
+
+
+#tool-toolbar #run-btn {background:$syraline-accent;color:$syraline-bg;text-style:bold;}
+#tool-toolbar #run-btn:hover,#tool-toolbar #run-btn:focus {background:$syraline-accent;color:$syraline-bg;}
+
+/* =====================================================================
+   GUI v2 — titre blocky permanent + barre de navigation horizontale.
+   ===================================================================== */
+/* Titre SYRALINE : police ansi_shadow (6 lignes), en haut à gauche. */
+#hero,.short #hero,.compact #hero {height:8;max-height:42%;border:none;margin:1 2 0 2;}
+#identity {height:7;padding:0 1 0 0;margin:0;align:left middle;}
+#dashboard-brand {height:6;width:1fr;margin:0;}
+.tiny #hero {height:6;}
+.tiny #identity {height:5;}
+.tiny #dashboard-brand {height:4;}
+
+/* Barre de navigation horizontale, juste sous le titre. */
+#navbar {height:3;margin:0 2;border-top:solid $syraline-border;border-bottom:solid $syraline-border;align:left middle;background:$syraline-bg;}
+#navbar-cats {width:1fr;height:3;overflow-x:auto;overflow-y:hidden;align:left middle;scrollbar-size-horizontal:1;}
+#navbar .nav-button {width:auto;min-width:0;height:3;margin:0 1 0 0;padding:0 2;content-align:center middle;text-align:center;text-wrap:nowrap;border:none !important;border-bottom:thick transparent !important;border-left:none !important;background:transparent;color:$syraline-text-dim;}
+#navbar .nav-button:hover,#navbar .nav-button:focus {background:$syraline-bg-alt;color:$syraline-text;border-bottom:thick transparent !important;}
+#navbar .nav-button.chosen {border-bottom:thick $syraline-accent !important;color:$syraline-accent;text-style:bold;background:$syraline-bg-alt;}
+/* Catégories VIP : texte doré pour les distinguer. */
+#navbar .nav-button.vip-cat {color:#ffd700;}
+#navbar .nav-button.vip-cat:hover,#navbar .nav-button.vip-cat:focus {color:#ffe27a;}
+#navbar .nav-button.vip-cat.chosen {color:#ffd700;border-bottom:thick #ffd700 !important;}
+#navbar .nav-aux {min-width:5;color:$syraline-text-dim;}
+#sidebar-end {display:none;}
+
+/* L'espace de travail n'a plus de barre latérale : les cartes occupent la largeur. */
+#workspace {height:1fr;min-height:6;margin:0 2;}
+#catalog {width:1fr;padding:0 1;}
+
+/* =====================================================================
+   GUI v3 — hero centré (VIP gauche / titre centre / profil droite) et
+   bascule entre la page Home et la page catalogue.
+   ===================================================================== */
+#secret-entry,#secret-entry:hover,#secret-entry:focus {width:23;min-width:13;height:3;margin:0 2 0 0;}
+#dashboard-brand {width:1fr;height:6;content-align:center middle;text-align:center;}
+#hero-right,.short #hero-right,.compact #hero-right {margin:0 0 0 2;}
+
+/* Page Home : barre de catégories masquée, bouton d'accès affiché. */
+.home-view #navbar {display:none;}
+#access-syraline {display:none;}
+.home-view #access-syraline {display:block;width:44;max-width:100%;height:3;margin:1 0 1 1;background:$syraline-accent;color:$syraline-bg;text-style:bold;content-align:center middle;border:none;}
+.home-view #access-syraline:hover,.home-view #access-syraline:focus {background:$syraline-accent-2;color:$syraline-text;}
+.home-view #scroll-hint {display:none;}
+
+/* Bouton « Back home » en tête de la barre de catégories. */
+#navbar .nav-button.nav-back {color:$syraline-accent;text-style:bold;}
+#navbar .nav-button.nav-back.chosen {border-bottom:thick transparent !important;background:transparent;}
+#navbar .nav-button.nav-back:hover,#navbar .nav-button.nav-back:focus {background:$syraline-bg-alt;color:$syraline-text;}
+
+/* Centrage vertical des éléments du hero. */
+#hero,.short #hero,.compact #hero {align:left middle;}
+
+/* =====================================================================
+   GUI v4 — hero deux rangées : VIP + profil en haut, TITRE pleine largeur
+   centré en dessous (place pour le grand logo) ; bouton d'accès centré.
+   ===================================================================== */
+#hero,.short #hero,.compact #hero {height:11;max-height:55%;layout:vertical;align:left top;border:none;margin:1 2 0 2;}
+#hero-top {height:4;width:100%;align:left middle;}
+#hero-spacer {width:1fr;height:1;}
+#secret-entry,#secret-entry:hover,#secret-entry:focus {width:23;min-width:13;height:3;margin:0;}
+#hero-right,.short #hero-right,.compact #hero-right {width:30;height:4;margin:0;padding:0 1;}
+#dashboard-brand {width:1fr;height:6;content-align:center middle;text-align:center;margin:0;}
+#signature-rail {dock:bottom;height:1;width:100%;}
+.tiny #hero {height:8;}
+.tiny #hero-top {height:3;}
+.tiny #hero-right {height:3;}
+.tiny #dashboard-brand {height:4;}
+
+/* Bouton « Accéder à SyraLine » : plus petit et centré en bas du Home. */
+#access-row {display:none;}
+.home-view #access-row {display:block;height:3;width:100%;align:center middle;margin:1 0 1 0;}
+.home-view #access-syraline {display:block;width:32;min-width:20;margin:0;}
+#access-syraline {width:32;height:3;background:$syraline-accent;color:$syraline-bg;text-style:bold;content-align:center middle;border:none;}
+#access-syraline:hover,#access-syraline:focus {background:$syraline-accent-2;color:$syraline-text;}
+
+/* Hero resserré : titre remonté, plus d'espace pour les cartes de la collection. */
+#hero,.short #hero,.compact #hero {height:10;margin:0 2 0 2;}
+#hero-top {height:4;align:left top;}
+#dashboard-brand {content-align:center top;}
+.tiny #hero {height:8;}
+#navbar {margin:0 2;}
+
+/* Titre remonté dans l'espace central libre + hero raccourci. */
+#hero,.short #hero,.compact #hero {height:9;}
+#dashboard-brand {offset:0 -1;content-align:center top;}
+
+/* Titre pixel (4 lignes) : compact, remonté, profil rétabli (pas d'écrasement). */
+#hero,.short #hero,.compact #hero {height:8;}
+#hero-top {height:4;align:left top;}
+#hero-right,.short #hero-right,.compact #hero-right {width:30;height:4;margin:0;padding:0 1;}
+#dashboard-brand {height:4;content-align:center top;offset:0 0;}
+.tiny #hero {height:7;}
+.tiny #dashboard-brand {height:4;}
+
+/* Titre centré en Python : pas de recadrage CSS (sinon logo brisé). */
+#dashboard-brand {content-align:left top;text-align:left;offset:0 0;width:1fr;height:4;}
+#hero,.short #hero,.compact #hero {height:8;}
+
+/* =====================================================================
+   GUI v5 — hero sur UNE rangée : VIP (gauche) · TITRE centré · profil (droite).
+   VIP et profil rétrécis pour laisser la place au logo entre les deux.
+   ===================================================================== */
+#hero-top,#hero-spacer {display:none;}
+#hero,.short #hero,.compact #hero,.tiny #hero {height:6;max-height:30%;layout:horizontal;align:left middle;margin:1 2 0 2;border:none;}
+#secret-entry,#secret-entry:hover,#secret-entry:focus {width:16;min-width:16;height:3;margin:0;padding:0;}
+#dashboard-brand {width:1fr;height:4;content-align:left top;text-align:left;offset:0 0;margin:0;}
+#hero-right,.short #hero-right,.compact #hero-right,.tiny #hero-right {width:22;height:4;margin:0;padding:0 1;border:round $syraline-border;background:$syraline-bg-alt;}
+.vip-active #hero-right {border:round #5a3aa8;background:#150e24;}
+#signature-rail {dock:bottom;height:1;width:100%;}
+
+/* Libellé « Pas de clé ? Rejoins le Discord » sur l'écran VIP SPACE. */
+#dark-key-links-label {height:auto;color:$syraline-text-dim;text-align:center;margin-top:1;}
