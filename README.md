@@ -77,10 +77,10 @@ Keyboard shortcuts keep navigation fast without hunting through menus:
 
 | Action | Control |
 | :--- | :--- |
-| Find a tool | `Ctrl + K` |
-| Choose a theme | `F2` |
-| Toggle animations | `F6` |
-| Quit | `Ctrl + Q` |
+| Find a tool | `Ctrl + F` |
+| Choose a theme | `F4` |
+| Toggle animations | `F7` |
+| Quit | `Ctrl + C` |
 
 * **Six languages:** Français · English · Español · Deutsch · 中文 · العربية
 * **Ten themes:** Crimson · Glacier · Orchid · Ivory · Emerald · Amber · Ocean · Rose · Mono · Rainbow
